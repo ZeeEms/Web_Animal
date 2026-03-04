@@ -8,23 +8,40 @@
         <h1> Adoption Form </h1><hr>
 
         <h2>Contact Information</h2>
-        <h3>First Name</h3>
-        <input name="First" type="text" size="20">
-        <h3>Last Name</h3>
-        <input name="Last" type="text" size="20">
-        <h3>Phone Number</h3>
-        <input name="Phone" type="number" size="20">
-        <h3>Email</h3>
-        <input name="Last" type="text" size="20">
+        
+        <div class="container">
+            <div>
+                <h3>First Name</h3>
+                <input name="First" type="text" size="20">
+            </div>
+            <div>
+                <h3>Last Name</h3> 
+                <input name="First" type="text" size="20">
+            </div>
+            <div>
+                <h3>Phone Number</h3>
+                <input name="Phone" type="number" size="20">
+            </div>
+            <div>
+                <h3>Email</h3>
+                <input name="Last" type="text" size="20">
+            </div>
+            
+        </div>
+        
+        
+        
 
         <h2>Genrel Information</h2><hr>
 
         <h3>Reason for Adoption</h3>
-        <span class="che"><input  name="reason" type="checkbox" value="a">I am bored</span>
-        <input name="reason" type="checkbox" value="b">A pet for my pet<br>
-        <input name="reason" type="checkbox" value="c">A friend for me 
-        <input name="reason" type="checkbox" value="d">I need food for my alligators<br>
-        <input name="reason" type="checkbox" value="e">Other<br>
+        <div class="container che" >
+            <div><input  name="reason" type="checkbox" value="a">I am bored</div>
+            <div><input name="reason" type="checkbox" value="b">A pet for my pet<br></div>
+            <div><input name="reason" type="checkbox" value="c">A friend for me </div>
+            <div><input name="reason" type="checkbox" value="d">I need food for my alligators<br></div>
+            <div><input name="reason" type="checkbox" value="e">Other<br></div>
+        </div>
         <!--To lock the textbox we need javascript-->
         <textarea name="textarea" rows="5" cols="20">
             Other reason for adopting...
@@ -33,7 +50,10 @@
         <input name="FirstTime" type="radio" value="y">Yes
         <input name="FirstTime" type="radio" value="n" checked>No
         <!--Sumbitting by using ?-->
-        <button type="button" >Sumbit Adoption Request</button>
+        <div>
+            <button type="button" >Sumbit Adoption Request</button>
+        </div>
+        
 
         
     </body>

@@ -1,5 +1,9 @@
 .che{
-    text-align: center;
     accent-color: PINK;
-    margin: 25%;
+}
+.container{
+    display: grid;
+    grid-template-columns:auto auto; 
+
+    gap: 10px; 
 }
