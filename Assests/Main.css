@@ -4,6 +4,10 @@
 .container{
     display: grid;
     grid-template-columns:auto auto; 
-
+    border-radius: 5px;
+    background-color: pink;
     gap: 10px; 
+}
+form{
+    
 }
