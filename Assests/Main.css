@@ -1,11 +1,15 @@
+
 .che{
     accent-color: PINK;
+    border-color: pink;
+    
 }
 .container{
     display: grid;
     grid-template-columns:auto auto; 
     border-radius: 5px;
     gap: 10px; 
+   
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -16,6 +20,7 @@
     margin-bottom: 20px;
     margin-right: 20px;
     padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .but{
     border: 5px;
@@ -31,4 +36,18 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+.inp{
+    border-radius: 5px;
+    border-color: pink;
+}
+
+.im{
+    display: block;
+    margin: auto;
 }
