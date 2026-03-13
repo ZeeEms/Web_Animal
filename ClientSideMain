@@ -2,14 +2,16 @@
 <html>
     <head>
         <title> Malex Shelter</title>
+
     </head>
     <body>
-        <p>Hej</p>
-
-        
+ 
     </body>
     <footer>
         
     </footer>
     <!--Scripts should be at the bottom-->
+    <script>
+ 
+    </script>
 </html>
