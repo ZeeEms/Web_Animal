@@ -2,10 +2,36 @@
 <html>
     <head>
         <title> Malex Shelter</title>
-
+        <link href="Assests\Css" rel="stylesheet">
+        <script src="javaScriptClientSide"></script>
     </head>
     <body>
- 
+        <div class="fltrButton">
+            <button onclick="expandFilter()" class="buttonVis">Filter</button>
+                <div id="dropdown" class="filterContent">
+                    <button type="button" data-btn="1">
+                        Cats
+                    </button>
+                     <button type="button" data-btn="2">
+                        Dogs
+                    </button>
+                     <button type="button" data-btn="3">
+                        Other
+                    </button>
+                </div>
+        </div>
+        <div>
+            <img src="Assests\Doggo.jpg" alt="img" data-img="2" width="345" height="460"/>
+            <img src="Assests\Kitty.jpg" alt="img" data-img="1" width="345" height="460"/>
+            <img src="Assests\Snake.jpg" alt="img" data-img="3" width="345" height="460"/>
+        
+        </div class = "card">
+            <div>
+                <button onclick="" position: relative>Adopt</button>
+            </div>
+        <div>
+            
+        </div>
     </body>
     <footer>
         

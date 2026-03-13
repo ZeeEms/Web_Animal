@@ -1,1 +1,26 @@
+       function expandFilter()
+        {
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+        window.onclick = function(event)
+        {
+            if (!event.target.matches('.buttonVis'))
+            {
+                var filtrOptions = document.getElementsByClassName("filterContent");
+                var i;
+                for (i = 0; i < filtrOptions.length; i++) {
+                    var expand = filtrOptions[i];
+                    if (expand.classList.contains('show')){
+                        expand.classList.remove('show');
+                    }
 
+                }
+            }
+        } 
+
+        const card = document.querySelector(".card");
+
+        card.addEventListener("click", function()
+        {
+            card.classList.toggle("is-flipped");
+        });
