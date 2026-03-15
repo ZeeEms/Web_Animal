@@ -9,24 +9,79 @@
         
     </head>
     <body>
-        <p>Filter</p>
-        <div class="grid">
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
-        <p class="card ">card here</p>
+        <div class="fltrButton">
+            <button onclick="expandFilter()" class="buttonVisuals">Filter</button>
+                <div id="dropdown" class="filterContent">
+                    <button type="button" data-name="all" class="active">
+                        All
+                    </button>
+                    <button data-name="cats">
+                        Cats
+                    </button>
+                     <button data-name="dogs">
+                        Dogs
+                    </button>
+                     <button data-name="other">
+                        Other
+                    </button>
+                </div>
         </div>
         
+        <div class="grid center">
+         <div class="card" data-name="dogs">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Doggo.jpg" alt="img" class="frontImg"/>
+                <h1>Huggo</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Huggo</h1>
+                <!---<img src="Assests\Pictures\Doggo.jpg" alt="img" class="backImg"/>--->
+                <p class="cardBackPadding">
+                    Huggo is the best boy. He is a 2-year-old Golden Retriever with lots of joy and charm. 
+                    He is a big boy - both in size and personality - and he meets the world with a wagging tail and great enthusiasm.
+                    Do you dream of a loyal, active and devoted friend who will share both adventures and couch coziness? Then Huggo is ready to meet you.
 
-        
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+          <div class="card" data-name="cats">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Kitty.jpg" alt="img" class="frontImg"/>
+                <h1>Charlie</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Charlie</h1>
+                <!---<img src="Assests\Pictures\Doggo.jpg" alt="img" class="backImg"/>--->
+                <p class="cardBackPadding">
+                    Charlie is a beautiful cat that has a bit of everything. She is very curious and outgoing, to the point where it is
+                    sometimes difficult to get anything done because she gets in the way. Charlie is looking for a loving and quiet home
+                     where she can land softly and feel that she is still someone's very special cat.
+
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+          <div class="card" data-name="other">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Snake.jpg" alt="img" class="frontImg"/>
+                <h1>Mexx</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Mexx</h1>
+                <!---<img src="Assests\Pictures\Doggo.jpg" alt="img" class="backImg"/>--->
+                <p class="cardBackPadding">
+                    Mexx is an initially curious corn snake, but it is still in an adaptation phase. As with all corn snakes,
+                     it requires time and patience to become or remain tame and socialized. If you give Mexx the necessary attention and care,
+                      it will surely learn to trust you in time and become a cozy companion at home.
+
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <!---->
+        </div>
+    <script src="javaScriptClientSide.js"></script>        
     </body>
     <footer>
     
@@ -40,12 +95,10 @@
                 Malex@shelter.dk
             </p> 
             <div class="im">
-                <img src="C:\Users\Ejer\Documents\GitHub\Web_Animal\Web_Animal-main\Web_Animal\Assests\Pictures\Logo.png" alt="Logo" width="80" height="80">
+                <img src="Assests\Pictures\Logo.png" alt="Logo" width="80" height="80">
             </div>
             
         </div>
       
     </footer>
-
-    <!--Scripts should be at the bottom-->
 </html>
