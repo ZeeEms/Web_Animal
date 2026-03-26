@@ -145,7 +145,6 @@ button.active {
     background-color: #f5f0e6;
     transform: rotateY(180deg);
     border-radius: 6px;
-    position: relative;
 }
 
 .card.is-flipped {
@@ -154,13 +153,6 @@ button.active {
 
 .center {
     padding: min(20px, 7%);
-}
-/*if we want the image*/
-.backImg {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    object-position: center;
 }
 
 .frontImg {
