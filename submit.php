@@ -27,7 +27,10 @@ if(isset($_POST['reason'])){
 $sql = "INSERT INTO submissions (First, Last, Phone, Email, Reason)
         VALUES ('$first', '$last', '$phone', '$email', '$reason')";
 
-if ($conn->query($sql) === TRUE)
+if ($conn->query($sql) === TRUE){
+    header("Location: ClientSideMain.html");
+    exit();
+}
 
 $conn->close();
 
