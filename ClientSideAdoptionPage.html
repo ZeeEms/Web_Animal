@@ -32,28 +32,21 @@
             </div>
             
         </div>
-        
-        
-        
 
         <h2>Genrel Information</h2><hr>
 
         <h3>Reason for Adoption</h3>
         <div class="container check" >
-            <div><input  name="reason" type="checkbox" value="a">I am bored</div>
-            <div><input name="reason" type="checkbox" value="b">A pet for my pet<br></div>
-            <div><input name="reason" type="checkbox" value="c">A friend for me </div>
-            <div><input name="reason" type="checkbox" value="d">I need food for my alligators<br></div>
-            <div><input id="show" name="reason" type="checkbox" value="e">Other<br></div>
+            <div><input  name="reason[]" type="checkbox" value="a">I am bored</div>
+            <div><input name="reason[]" type="checkbox" value="b">A pet for my pet<br></div>
+            <div><input name="reason[]" type="checkbox" value="c">A friend for me </div>
+            <div><input name="reason[]" type="checkbox" value="d">I need food for my alligators<br></div>
         </div>
-        <!--To lock the textbox we need javascript-->
-        <textarea id="textreason" name="textarea" rows="5" cols="40">
-            Other reason for adopting...
-        </textarea>
+        
         <h3>First time Adopting?</h3>
         <input name="FirstTime" type="radio" value="y">Yes
         <input name="FirstTime" type="radio" value="n" checked>No
-        <!--Sumbitting by using ?-->
+        <!--Sumbitting by using php-->
         <div class="but">
             <button type="button" id="submitbtn" >Sumbit Adoption Request</button>
             <button type="submit">Submit Adoption Request</button>
