@@ -1,15 +1,6 @@
 <?php
+include 'db.php';
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-//Connect to MySQL
-$conn = new mysqli("localhost", "root", "", "malex_db");
-
-//Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 //Get form data
 $first = $_POST['First'];
@@ -27,11 +18,11 @@ if(isset($_POST['reason'])){
 $sql = "INSERT INTO submissions (First, Last, Phone, Email, Reason)
         VALUES ('$first', '$last', '$phone', '$email', '$reason')";
 
-if ($conn->query($sql) === TRUE){
+if ($connect->query($sql) === TRUE){
     header("Location: ClientSideMain.html");
     exit();
 }
 
-$conn->close();
+$connect->close();
 
 ?>

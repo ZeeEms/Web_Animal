@@ -1,8 +1,8 @@
 <?php
     $host_name = "localhost";
-    $database = "shelteranimals";
-    $user_name = "Emalex";
-    $password = "WebProgramming";
+    $database = "malex_db";
+    $user_name = "root";
+    $password = "";
 
     //Creating connection:
     $connect = mysqli_connect($host_name, $user_name, $password, $database);
