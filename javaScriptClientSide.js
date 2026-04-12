@@ -1,30 +1,29 @@
-/*$(document).ready(function(){
-    $("#textreason").hide();
-})*/
-
 function expandFilter()
 {
     document.getElementById("dropdown").classList.toggle("show");
 }
 
 const filterButtons = document.querySelectorAll(".filterContent button");
-const filterableCards = document.querySelectorAll(".grid .card");
 
-const filterCards = e => {
-    document.querySelector(".active").classList.remove("active");
-    e.target.classList.add("active");
+const filterCards = (event) => {
+    document.querySelector(".active").classList.remove("active"); //finding the first element with the active class and removes it. The active class changes color of the currently chosen option.
+    event.target.classList.add("active"); //adding the active class on the clicked filter option/button
+
+    const type = event.target.dataset.name; // gettig the data-name attribute of the button (filter option) that was clicked
+    const grid = document.querySelector(".grid");   
     
-    filterableCards.forEach(card => {
-        card.classList.add("hide");
+    const xhr = new XMLHttpRequest();
 
-     if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
-        card.classList.remove("hide");
+    xhr.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            grid.innerHTML = this.responseText;
         }
-    });
+    };
+    xhr.open("GET", "FetchAnimals.php?type=" + type, true);
+    xhr.send();
 };
 
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
-
 
 window.onclick = function(event)
 {
@@ -50,3 +49,9 @@ cards.forEach((card) => {
         this.classList.toggle("is-flipped");
     });
 });
+
+const submit_button = document.getElementById('submitbtn')
+
+submit_button.addEventListener("click", () => {
+    alert ('Form is submitted!')
+})
