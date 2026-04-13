@@ -49,7 +49,8 @@
                         <p class="cardBackPadding">
                             <?php echo $row['description']; ?>
                         </p>
-                        <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+                        <button onclick="window.location.href='ClientSideAdoptionPage.html?adoptivePet=<?php echo urlencode($row['name']); ?>'" 
+                        class="buttonVisuals adoptBtnPlacement">Adopt</button>
                     </div>
                 </div>
                 <?php

@@ -1,8 +1,8 @@
 <?php
     $host_name = "localhost";
-    $database = "malex_db";
-    $user_name = "root";
-    $password = "";
+    $database = "malex_db"; //Alexa's: shelteranimals
+    $user_name = "root"; //Alexa's: Emalex
+    $password = ""; //Alexa's: WebProgramming
 
     //Creating connection:
     $connect = mysqli_connect($host_name, $user_name, $password, $database);

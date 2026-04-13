@@ -19,7 +19,7 @@ $sql = "INSERT INTO submissions (First, Last, Phone, Email, Reason)
         VALUES ('$first', '$last', '$phone', '$email', '$reason')";
 
 if ($connect->query($sql) === TRUE){
-    header("Location: ClientSideMain.html");
+    header("Location: ClientSideMainDublicate.php");
     exit();
 }
 

@@ -1,7 +1,3 @@
-/*$(document).ready(function(){
-    $("#textreason").hide();
-})*/
-
 function expandFilter()
 {
     document.getElementById("dropdown").classList.toggle("show");
@@ -52,7 +48,19 @@ cards.forEach((card) => {
 });
 
 const submit_button = document.getElementById('submitbtn')
-
+/*
 submit_button.addEventListener("click", () => {
     alert ('Form is submitted!')
 })
+*/
+
+const urlName = new URLSearchParams(window.location.search);
+    const adoptivePet = urlName.get('adoptivePet'); 
+    if (adoptivePet) {
+        const el = document.getElementById('adoptivePet');
+        if (el) {
+            el.innerText = "For: " + adoptivePet;
+        } else {
+            console.error("Element #adoptivePet not found");
+        }
+    }
