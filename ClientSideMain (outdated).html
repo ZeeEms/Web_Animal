@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Malex Shelter</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="Assests/Main.css" type="text/css"/>
+        <h1>Malex Shelter</h1>
+        
+    </head>
+    <body>
+        <div class="fltrButton">
+            <button onclick="expandFilter()" class="buttonVisuals">Filter</button>
+                <div id="dropdown" class="filterContent">
+                    <button type="button" data-name="all" class="active">
+                        All
+                    </button>
+                    <button data-name="cat">
+                        Cats
+                    </button>
+                     <button data-name="dog">
+                        Dogs
+                    </button>
+                     <button data-name="other">
+                        Other
+                    </button>
+                </div>
+        </div>
+        
+        <div class="grid center">
+         <div class="card" data-name="dog">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Doggo.jpg" alt="img" class="frontImg"/>
+                <h1>Huggo</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Huggo</h1>
+                <p class="cardBackPadding">
+                    Huggo is the best boy. He is a 2-year-old Golden Retriever with lots of joy and charm. 
+                    He is a big boy - both in size and personality - and he meets the world with a wagging tail and great enthusiasm.
+                    Do you dream of a loyal, active and devoted friend who will share both adventures and couch coziness? Then Huggo is ready to meet you.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+          <div class="card" data-name="cat">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Kitty.jpg" alt="img" class="frontImg"/>
+                <h1>Charlie</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Charlie</h1>
+                <p class="cardBackPadding">
+                    Charlie is a beautiful cat that has a bit of everything. She is very curious and outgoing, to the point where it is
+                    sometimes difficult to get anything done because she gets in the way. Charlie is looking for a loving and quiet home
+                    where she can land softly and feel that she is still someone's very special cat.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+          <div class="card" data-name="other">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Snake.jpg" alt="img" class="frontImg"/>
+                <h1>Mexx</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Mexx</h1>
+                <p class="cardBackPadding">
+                    Mexx is an initially curious corn snake, but it is still in an adaptation phase. As with all corn snakes,
+                     it requires time and patience to become or remain tame and socialized. If you give Mexx the necessary attention and care,
+                      it will surely learn to trust you in time and become a cozy companion at home.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="other">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Bun.jpg" alt="img" class="frontImg"/>
+                <h1>Lavender</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Lavender</h1>
+                <p class="cardBackPadding">
+                    Meet Lavender. Lavender lives with Vilda. They are both incredibly sweet and lovely outdoor rabbits who are looking for
+                    a home together. They are looking for a home with a large aviary where they can get a lot of physical and mental stimulation.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="other">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Bun2.jpg" alt="img" class="frontImg"/>
+                <h1>Vilda</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Vilda</h1>
+                <p class="cardBackPadding">
+                    Sweet Vilda was found together with two other rabbits dumped in Albertslund in their small cages. So now she is looking
+                    for a life of welfare that she has never experienced before. We are still getting to know her, but so far she is brave and curious.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="other">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Snake2.jpg" alt="img" class="frontImg"/>
+                <h1>Newton</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Newton</h1>
+                <p class="cardBackPadding">
+                    Newton came to the shelter when the owner unfortunately could no longer have him. He has been used to handling
+                    but not the last few months. He is used to being fed rats and mice. Newton is looking for an experienced home that can meet all of his needs.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="cat">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Kitty2.jpg" alt="img" class="frontImg"/>
+                <h1>Bonus</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Bonus</h1>
+                <p class="cardBackPadding">
+                    Bonus is a slightly cautious girl who can get nervous about loud noises and sudden movements.
+                    Therefore, she is looking for a quiet home without small children. She needs some time to get to know new people,
+                    but once she feels safe, she enjoys both being petted and being cuddled in bed.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="dog"> <!---->
+            <div class="cardFront">
+                <img src="Assests\Pictures\Doggo2.jpg" alt="img" class="frontImg"/>
+                <h1>Lady</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Lady</h1>
+                <p class="cardBackPadding">
+                    Lady is a sensitive 2-year-old German Shepherd who hasn't tried much yet and is therefore untrained in many everyday things.
+                    For Lady, this means that she needs a home where she can be met exactly where she is - with calm, patience and lots of support.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="dog">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Doggo3.jpg" alt="img" class="frontImg"/>
+                <h1>Rambo</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Rambo</h1>
+                <p class="cardBackPadding">
+                    We don't know much about Rambo's upbringing other than that he hasn't experienced much. We do know, however,
+                    that he is extremely loving, friendly, and perhaps not very trainable. He really just wants to go for a walk and come home on the couch.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="cat">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Kitty3.jpg" alt="img" class="frontImg"/>
+                <h1>Filuka</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Filuka</h1>
+                <p class="cardBackPadding">
+                    Sweet Filuka is looking for a home without other animals and small children and where she can be an indoor
+                    cat or a home with limited outdoor life as she has impaired vision. Filuka is incredibly sweet and welcoming, as she is semi-longhaired she requires some fur care.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="other">
+            <div class="cardFront">
+                <img src="Assests\Pictures\turtle.jpg" alt="img" class="frontImg"/>
+                <h1>Donatello</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Donatello</h1>
+                <p class="cardBackPadding">
+                    Meet Donatello – a small, fine Greek tortoise of just three months.
+                    Donatello was handed over to the shelter, as it was unfortunately not treated properly in its previous home.
+                    Fortunately, it is now ready to find its very own, permanent and loving home.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <div class="card" data-name="other">
+            <div class="cardFront">
+                <img src="Assests\Pictures\Bun3.jpg" alt="img" class="frontImg"/>
+                <h1>Sally</h1>
+            </div>
+            <div class="cardFront cardBack">
+                <h1>Sally</h1>
+                <p class="cardBackPadding">
+                    Sally is curious and calm, she is selective in her contact with people.
+                    We would definitely recommend that this is further worked on in the new home.
+                    For example by hand-feeding her with her pellets so that she associates the contact positively.
+                </p>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+            </div>
+        </div>
+        <!---->
+        </div>
+    <script src="javaScriptClientSide.js"></script>        
+    </body>
+    <footer>
+    
+        <div class="contact-info">
+            <p>Malex Shelter
+                <br>
+                Alborggade 7a
+                <br>
+                9900 Aalborg
+                <br>
+                Malex@shelter.dk
+            </p> 
+            <div class="im">
+                <img src="Assests\Pictures\Logo.png" alt="Logo" width="80" height="80">
+            </div>
+            
+        </div>
+      
+    </footer>
+</html>
