@@ -175,6 +175,10 @@ button.active {
 }
 
 .namespace{
-    display: flex;
+    display: inline;
     gap: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: pink;
 }
+
