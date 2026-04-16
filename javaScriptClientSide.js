@@ -63,12 +63,15 @@ const urlName = new URLSearchParams(window.location.search);
     if (adoptivePet) {
         const el = document.getElementById('adoptivePet');
         if (el) {
-            el.innerText = "For: " + adoptivePet;
+            el.innerText = adoptivePet;
+            el.value = adoptivePet;
         } else {
             console.error("Element #adoptivePet not found");
         }
     }
 
+const petName = document.getElementById("adoptivePet").textContent;
+document.getElementById("adoptivePetHidden").value = petName;
 
 const submit_button = document.getElementById('submitbtn')
 /*
