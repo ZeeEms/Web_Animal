@@ -173,3 +173,8 @@ button.active {
     padding-left: 18px;;
     padding-right: 18px;
 }
+
+.namespace{
+    display: flex;
+    gap: .5rem;
+}
