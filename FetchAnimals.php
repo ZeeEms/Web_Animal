@@ -23,13 +23,14 @@
             <div class="cardFront">
                 <img src="<?php echo $row['image_path']; ?>" alt="img" class="frontImg"/>
                 <h1><?php echo $row['name']; ?></h1>
+                <h2 id="adoption_status"></h2>
             </div>
             <div class="cardFront cardBack">
                 <h1><?php echo $row['name']; ?></h1>
                 <p class="cardBackPadding">
                     <?php echo $row['description']; ?>
                 </p>
-                <button onclick="window.location.href='ClientSideAdoptionPage.html'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
+                <button onclick="window.location.href='ClientSideAdoptionPage.html?adoptivePet=<?php echo urlencode($row['name']); ?>'" class="buttonVisuals adoptBtnPlacement">Adopt</button>
             </div>
         </div>
         <?php

@@ -17,6 +17,13 @@ const filterCards = (event) => {
     xhr.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
             grid.innerHTML = this.responseText;
+            const cards = document.querySelectorAll(".card");
+            cards.forEach((card) => {
+                card.addEventListener("click", function()
+                {
+                    this.classList.toggle("is-flipped");
+                });
+            });
         }
     };
     xhr.open("GET", "FetchAnimals.php?type=" + type, true);
@@ -50,8 +57,22 @@ cards.forEach((card) => {
     });
 });
 
-const submit_button = document.getElementById('submitbtn')
+const urlName = new URLSearchParams(window.location.search);
+    const adoptivePet = urlName.get('adoptivePet'); 
 
+    if (adoptivePet) {
+        const el = document.getElementById('adoptivePet');
+        if (el) {
+            el.innerText = "For: " + adoptivePet;
+        } else {
+            console.error("Element #adoptivePet not found");
+        }
+    }
+
+
+const submit_button = document.getElementById('submitbtn')
+/*
 submit_button.addEventListener("click", () => {
     alert ('Form is submitted!')
 })
+    */
